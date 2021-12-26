@@ -1,0 +1,50 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT passanger (book)+>
+<!ATTLIST passanger
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book (reg_id,passport_no,visa_no,f_name,l_name,email,address,
+                city,contact,pin_no)>
+<!ATTLIST book
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT reg_id (#PCDATA)>
+<!ATTLIST reg_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT passport_no (#PCDATA)>
+<!ATTLIST passport_no
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT visa_no (#PCDATA)>
+<!ATTLIST visa_no
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT f_name (#PCDATA)>
+<!ATTLIST f_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT l_name (#PCDATA)>
+<!ATTLIST l_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT city (#PCDATA)>
+<!ATTLIST city
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT contact (#PCDATA)>
+<!ATTLIST contact
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pin_no (#PCDATA)>
+<!ATTLIST pin_no
+  xmlns CDATA #FIXED ''>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<registration>
+	<user>
+		<reg_id>001</reg_id>
+		<user_name>admin</user_name>
+		<password></password>
+		<first_name>Bhakti</first_name>
+		<last_name>Sanghani</last_name>
+		<email>sanghanibhakti922@gmail.com</email>
+	</user>
+	<user>
+		<reg_id>002</reg_id>
+		<user_name>Vrushti</user_name>
+		<password></password>
+		<first_name>Vrushti</first_name>
+		<last_name>Shah</last_name>
+		<email>shahvrushti91@gmail.com</email>
+	</user>
+	<user>
+		<reg_id>003</reg_id>
+		<user_name>Khushee</user_name>
+		<password></password>
+		<first_name>Khushee</first_name>
+		<last_name>Chitroda</last_name>
+		<email>chitrodakhushi@gmail.com</email>
+	</user>
+</registration>

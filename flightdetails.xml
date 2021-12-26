@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<flight>
+	<details>
+		<flight_id>AI001</flight_id>
+		<flight_name>Air india</flight_name>
+		<source_id>SC002</source_id>
+		<destination_id>DT023</destination_id>
+		<arrival_time>23:00</arrival_time>
+	</details>
+	<details>
+		<flight_id>AI003</flight_id>
+		<flight_name>Air India</flight_name>
+		<source_id>SC005</source_id>
+		<destination_id>DT099</destination_id>
+		<arrival_time>12:00</arrival_time>
+	</details>
+	<details>
+		<flight_id>AI067</flight_id>
+		<flight_name>SpiceJat</flight_name>
+		<source_id>SC034</source_id>
+		<destination_id>DT023</destination_id>
+		<arrival_time>5:00</arrival_time>
+	</details>
+</flight>

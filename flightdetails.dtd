@@ -1,0 +1,30 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT flight (details)+>
+<!ATTLIST flight
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT details (flight_id,flight_name,source_id,destination_id,
+                   arrival_time)>
+<!ATTLIST details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT flight_id (#PCDATA)>
+<!ATTLIST flight_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT flight_name (#PCDATA)>
+<!ATTLIST flight_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT source_id (#PCDATA)>
+<!ATTLIST source_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT destination_id (#PCDATA)>
+<!ATTLIST destination_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT arrival_time (#PCDATA)>
+<!ATTLIST arrival_time
+  xmlns CDATA #FIXED ''>

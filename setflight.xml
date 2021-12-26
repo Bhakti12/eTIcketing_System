@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<setflight>
+	<getdetails>
+		<set_flight_id>SAI001</set_flight_id>
+		<flight_id>AI001</flight_id>
+		<source_id>SC012</source_id>
+		<destination_id>DT023</destination_id>
+		<arrival_time>12:00</arrival_time>
+		<departure_time>5:00</departure_time>
+		<fare>5000</fare>
+	</getdetails>
+	<getdetails>
+		<set_flight_id>SAI003</set_flight_id>
+		<flight_id>AI023</flight_id>
+		<source_id>SC090</source_id>
+		<destination_id>DT879</destination_id>
+		<arrival_time>1:00</arrival_time>
+		<departure_time>4:00</departure_time>
+		<fare>6000</fare>
+	</getdetails>
+	<getdetails>
+		<set_flight_id>SAI056</set_flight_id>
+		<flight_id>AI047</flight_id>
+		<source_id>SC023</source_id>
+		<destination_id>DT056</destination_id>
+		<arrival_time>7:50</arrival_time>
+		<departure_time>10:30</departure_time>
+		<fare>9000</fare>
+	</getdetails>
+</setflight>

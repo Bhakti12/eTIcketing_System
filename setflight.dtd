@@ -1,0 +1,38 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT setflight (getdetails)+>
+<!ATTLIST setflight
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT getdetails (set_flight_id,flight_id,source_id,destination_id,
+                      arrival_time,departure_time,fare)>
+<!ATTLIST getdetails
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT set_flight_id (#PCDATA)>
+<!ATTLIST set_flight_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT flight_id (#PCDATA)>
+<!ATTLIST flight_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT source_id (#PCDATA)>
+<!ATTLIST source_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT destination_id (#PCDATA)>
+<!ATTLIST destination_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT arrival_time (#PCDATA)>
+<!ATTLIST arrival_time
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT departure_time (#PCDATA)>
+<!ATTLIST departure_time
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT fare (#PCDATA)>
+<!ATTLIST fare
+  xmlns CDATA #FIXED ''>

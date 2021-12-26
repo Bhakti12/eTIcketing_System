@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="itinerary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ticket"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ticket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ticket_id"/>
+        <xs:element ref="source_id"/>
+        <xs:element ref="destination_id"/>
+        <xs:element ref="depart_date"/>
+        <xs:element ref="depart_time"/>
+        <xs:element ref="return_date"/>
+        <xs:element ref="return_time"/>
+        <xs:element ref="reg_id"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ticket_id" type="xs:NCName"/>
+  <xs:element name="source_id" type="xs:NCName"/>
+  <xs:element name="destination_id" type="xs:NCName"/>
+  <xs:element name="depart_date" type="xs:string"/>
+  <xs:element name="depart_time" type="xs:NMTOKEN"/>
+  <xs:element name="return_date" type="xs:string"/>
+  <xs:element name="return_time" type="xs:NMTOKEN"/>
+  <xs:element name="reg_id" type="xs:integer"/>
+</xs:schema>

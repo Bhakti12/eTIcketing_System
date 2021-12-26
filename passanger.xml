@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<passanger>
+	<book>
+		<reg_id>001</reg_id>
+		<passport_no>12345678</passport_no>
+		<visa_no>00012345</visa_no>
+		<f_name>Vishwa</f_name>
+		<l_name>Solanki</l_name>
+		<email>solankivishwa@gmail.com</email>
+		<address>raijibaug</address>
+		<city>junagadh</city>
+		<contact>9856231470</contact>
+		<pin_no>362001</pin_no>
+	</book>
+	<book>
+		<reg_id>021</reg_id>
+		<passport_no>12390876</passport_no>
+		<visa_no>00034512</visa_no>
+		<f_name>Riya</f_name>
+		<l_name>Vasvani</l_name>
+		<email>vasvaniriya@gmail.com</email>
+		<address>raijibaug</address>
+		<city>junagadh</city>
+		<contact>7845123690</contact>
+		<pin_no>362001</pin_no>
+	</book>
+	<book>
+		<reg_id>099</reg_id>
+		<passport_no>89562100</passport_no>
+		<visa_no>00045612</visa_no>
+		<f_name>Vaibhav</f_name>
+		<l_name>Gandhi</l_name>
+		<email>Gandhivaibhav@gmail.com</email>
+		<address>manhar plot</address>
+		<city>rajkot</city>
+		<contact>9856231470</contact>
+		<pin_no>362001</pin_no>
+	</book>
+</passanger>

@@ -1,0 +1,33 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT registration (user)+>
+<!ATTLIST registration
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT user (reg_id,user_name,password,first_name,last_name,email)>
+<!ATTLIST user
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT reg_id (#PCDATA)>
+<!ATTLIST reg_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT user_name (#PCDATA)>
+<!ATTLIST user_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT password EMPTY>
+<!ATTLIST password
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT first_name (#PCDATA)>
+<!ATTLIST first_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT last_name (#PCDATA)>
+<!ATTLIST last_name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>

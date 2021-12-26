@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<destination>
+	<details>
+		<destination_id>DT056</destination_id>
+		<destination_name>Ahemdabad</destination_name>
+	</details>
+	<details>
+		<destination_id>DT034</destination_id>
+		<destination_name>Surat</destination_name>
+	</details>
+</destination>

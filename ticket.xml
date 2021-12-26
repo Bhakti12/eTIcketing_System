@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<itinerary>
+ <ticket>
+	<ticket_id>AI001</ticket_id>
+	<source_id>SC001</source_id>
+	<destination_id>DT001</destination_id>
+	<depart_date>09/03/2021</depart_date>
+	<depart_time>12:00</depart_time>
+	<return_date>10/3/2021</return_date>
+	<return_time>12:00</return_time>
+	<reg_id>001</reg_id>
+ </ticket>
+  <ticket>
+	<ticket_id>AI002</ticket_id>
+	<source_id>SC002</source_id>
+	<destination_id>DT002</destination_id>
+	<depart_date>09/03/2021</depart_date>
+	<depart_time>12:00</depart_time>
+	<return_date>10/3/2021</return_date>
+	<return_time>12:00</return_time>
+	<reg_id>010</reg_id>
+ </ticket>
+  <ticket>
+	<ticket_id>AI003</ticket_id>
+	<source_id>SC003</source_id>
+	<destination_id>DT003</destination_id>
+	<depart_date>09/03/2021</depart_date>
+	<depart_time>12:00</depart_time>
+	<return_date>10/3/2021</return_date>
+	<return_time>12:00</return_time>
+	<reg_id>011</reg_id>
+ </ticket>
+</itinerary>

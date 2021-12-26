@@ -1,0 +1,17 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT source (details)+>
+<!ATTLIST source
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT details (source_id,source_city)>
+<!ATTLIST details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT source_id (#PCDATA)>
+<!ATTLIST source_id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT source_city (#PCDATA)>
+<!ATTLIST source_city
+  xmlns CDATA #FIXED ''>

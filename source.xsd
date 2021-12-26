@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="source">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="details"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="source_id"/>
+        <xs:element ref="source_city"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="source_id" type="xs:NCName"/>
+  <xs:element name="source_city" type="xs:NCName"/>
+</xs:schema>

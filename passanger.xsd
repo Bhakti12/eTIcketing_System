@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="passanger">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="book"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="book">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="reg_id"/>
+        <xs:element ref="passport_no"/>
+        <xs:element ref="visa_no"/>
+        <xs:element ref="f_name"/>
+        <xs:element ref="l_name"/>
+        <xs:element ref="email"/>
+        <xs:element ref="address"/>
+        <xs:element ref="city"/>
+        <xs:element ref="contact"/>
+        <xs:element ref="pin_no"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reg_id" type="xs:integer"/>
+  <xs:element name="passport_no" type="xs:integer"/>
+  <xs:element name="visa_no" type="xs:integer"/>
+  <xs:element name="f_name" type="xs:NCName"/>
+  <xs:element name="l_name" type="xs:NCName"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="address" type="xs:string"/>
+  <xs:element name="city" type="xs:NCName"/>
+  <xs:element name="contact" type="xs:integer"/>
+  <xs:element name="pin_no" type="xs:integer"/>
+</xs:schema>

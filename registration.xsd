@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="registration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="user"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="reg_id"/>
+        <xs:element ref="user_name"/>
+        <xs:element ref="password"/>
+        <xs:element ref="first_name"/>
+        <xs:element ref="last_name"/>
+        <xs:element ref="email"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reg_id" type="xs:integer"/>
+  <xs:element name="user_name" type="xs:NCName"/>
+  <xs:element name="password">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="first_name" type="xs:NCName"/>
+  <xs:element name="last_name" type="xs:NCName"/>
+  <xs:element name="email" type="xs:string"/>
+</xs:schema>

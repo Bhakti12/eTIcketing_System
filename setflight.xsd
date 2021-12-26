@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="setflight">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="getdetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getdetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="set_flight_id"/>
+        <xs:element ref="flight_id"/>
+        <xs:element ref="source_id"/>
+        <xs:element ref="destination_id"/>
+        <xs:element ref="arrival_time"/>
+        <xs:element ref="departure_time"/>
+        <xs:element ref="fare"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="set_flight_id" type="xs:NCName"/>
+  <xs:element name="flight_id" type="xs:NCName"/>
+  <xs:element name="source_id" type="xs:NCName"/>
+  <xs:element name="destination_id" type="xs:NCName"/>
+  <xs:element name="arrival_time" type="xs:NMTOKEN"/>
+  <xs:element name="departure_time" type="xs:NMTOKEN"/>
+  <xs:element name="fare" type="xs:integer"/>
+</xs:schema>
