@@ -27,8 +27,7 @@ namespace WebApplication1
             f.Arrival_date = Convert.ToDateTime(TextBox6.Text);
             f.Seats = int.Parse(TextBox7.Text);
             f.Price = int.Parse(TextBox8.Text);
-            string result = client.insert(f);
-            lblmsg.Text = result.ToString();
+            Response.Redirect("displaydata.aspx");
         }
     }
 }

@@ -38,222 +38,222 @@ namespace WcfServiceLibrary1
     [DataContract]
     public class RegisterUser
     {
-        string name = string.Empty;
-		string address = string.Empty;
-		string contact = string.Empty;
-		string city = string.Empty;
-		string username = string.Empty;
-		string password = string.Empty;
+        string Name = string.Empty;
+		string Address = string.Empty;
+		string Contact = string.Empty;
+		string City = string.Empty;
+		string Username = string.Empty;
+		string Password = string.Empty;
 		
 		[DataMember]
-		public string Name
+		public string name
 		{
-				get {return name;}
-				set {name=value;}
+				get {return Name;}
+				set {Name=value;}
 		}
 		[DataMember]
-		public string Address
+		public string address
 		{
-				get {return address;}
-				set {address=value;}
+				get {return Address;}
+				set {Address=value;}
 		}
 		[DataMember]
-		public string Contact
+		public string contact
 		{
-				get {return contact;}
-				set {contact=value;}
+				get {return Contact;}
+				set {Contact=value;}
 		}
 		[DataMember]
-		public string City
+		public string city
 		{
-				get {return city;}
-				set {city=value;}
+				get {return City;}
+				set {City=value;}
 		}
 		[DataMember]
-		public string Username
+		public string username
 		{
-				get {return username;}
-				set {username=value;}
+				get {return Username;}
+				set {Username=value;}
 		}
 		[DataMember]
-		public string Password
+		public string password
 		{
-				get {return password;}
-				set {password=value;}
+				get {return Password;}
+				set {Password=value;}
 		}
     }
     [DataContract]
     public class LoginUser
     {
-        string username;
-		string password;
+        string Username;
+		string Password;
 		[DataMember]
-		public string Username
+		public string username
 		{
-			get {return username;}
-			set {username=value;}
+			get {return Username;}
+			set {Username=value;}
 		}
 		[DataMember]
-		public string Password
+		public string password
 		{
-			get {return password;}
-			set {password=value;}
+			get {return Password;}
+			set {Password=value;}
 		}
     }
     [DataContract]
     public class InsertFlight
     {
-        string airline = string.Empty;
-        int plane_no;
-        string departure_location = string.Empty;
-        string arrival_location = string.Empty;
-        DateTime departure_date;
-        DateTime arrival_date;
-        int seats;
-        int price;
+        string Airline = string.Empty;
+        int Plane_no;
+        string Departure_location = string.Empty;
+        string Arrival_location = string.Empty;
+        DateTime Departure_date;
+        DateTime Arrival_date;
+        int Seats;
+        int Price;
 
         [DataMember]
-        public string Airline
+        public string airline
         {
-            get { return airline; }
-            set { airline = value; }
+            get { return Airline; }
+            set { Airline = value; }
         }
 
         [DataMember]
-        public int Plane_no
+        public int plane_no
         {
-            get { return plane_no; }
-            set { plane_no = value; }
+            get { return Plane_no; }
+            set { Plane_no = value; }
         }
         [DataMember]
-        public string Departure_location
+        public string departure_location
         {
-            get { return departure_location; }
-            set { departure_location = value; }
+            get { return Departure_location; }
+            set { Departure_location = value; }
         }
         [DataMember]
-        public string Arrival_location
+        public string arrival_location
         {
-            get { return arrival_location; }
-            set { arrival_location = value; }
+            get { return Arrival_location; }
+            set { Arrival_location = value; }
         }
         [DataMember]
-        public DateTime Departure_date
+        public DateTime departure_date
         {
-            get { return departure_date; }
-            set { departure_date = value; }
+            get { return Departure_date; }
+            set { Departure_date = value; }
         }
         [DataMember]
-        public DateTime Arrival_date
+        public DateTime arrival_date
         {
-            get { return arrival_date;  }
-            set { arrival_date = value; }
+            get { return Arrival_date;  }
+            set { Arrival_date = value; }
         }
         [DataMember]
-        public int Seats
+        public int seats
         {
-            get { return seats; }
-            set { seats = value; }
+            get { return Seats; }
+            set { Seats = value; }
         }
         [DataMember]
-		public int Price
+		public int price
         {
-            get { return price; }
-            set { price = value; }
+            get { return Price; }
+            set { Price = value; }
         }
     }
     [DataContract]
     public class UpdateFlight
     {
-        int flight_id;
-		string airline;
-		int plane_no;
-		string departure_location;
-		string arrival_location;
-		DateTime departure_date;
-		DateTime arrival_date;
-		int seats;
-		int price;
+        int Flight_id;
+		string Airline;
+		int Plane_no;
+		string Departure_location;
+		string Arrival_location;
+		DateTime Departure_date;
+		DateTime Arrival_date;
+		int Seats;
+		int Price;
 		[DataMember]
-		public int Flight_id
+		public int flight_id
 		{
 			get{
-				return flight_id;
+				return Flight_id;
 			}
-			set{ flight_id = value;}
-		}
-		[DataMember]
-		public string Airline
-		{
-			get{
-				return airline;
-			}
-			set{ airline = value;}
+			set{ Flight_id = value;}
 		}
 		[DataMember]
-		public int Plane_no
+		public string airline
 		{
-			get{ return plane_no;}
-			set{ plane_no = value;}
+			get{
+				return Airline;
+			}
+			set{ Airline = value;}
 		}
 		[DataMember]
-		public string Departure_location
+		public int plane_no
+		{
+			get{ return Plane_no;}
+			set{ Plane_no = value;}
+		}
+		[DataMember]
+		public string departure_location
 		{
 			get{
-				return departure_location;
+				return Departure_location;
 			}
-			set{ departure_location = value;}
+			set{ Departure_location = value;}
 		}
 				[DataMember]
-		public string Arrival_location
+		public string arrival_location
 		{
 			get{
-				return arrival_location;
+				return Arrival_location;
 			}
-			set{ arrival_location = value;}
+			set{ Arrival_location = value;}
 		}
 				[DataMember]
-		public DateTime Departure_date
+		public DateTime departure_date
 		{
 			get{
-				return departure_date;
+				return Departure_date;
 			}
-			set{ departure_date = value;}
+			set{ Departure_date = value;}
 		}
 				[DataMember]
-		public DateTime Arrival_date
+		public DateTime arrival_date
 		{
 			get{
-				return arrival_date;
+				return Arrival_date;
 			}
-			set{ arrival_date = value;}
+			set{ Arrival_date = value;}
 		}
 				[DataMember]
-		public int Seats
+		public int seats
 		{
 			get{
-				return seats;
+				return Seats;
 			}
-			set{ seats = value;}
+			set{ Seats = value;}
 		}
 				[DataMember]
-		public int Price
+		public int price
 		{
 			get{
-				return price;
+				return Price;
 			}
-			set{ price = value;}
+			set{ Price = value;}
 		}
     }
 	[DataContract]
     public class DeleteFlight
     {
-        int flight_id;
+        int Flight_id;
 		[DataMember]
-		public int Flight_id
+		public int flight_id
 		{
-			get{ return flight_id; }
-			set{ flight_id = value; }
+			get{ return Flight_id; }
+			set{ Flight_id = value; }
 		}
     }
 	[DataContract]

@@ -18,13 +18,13 @@ namespace WcfServiceLibrary1
             string connectionString = @"Data Source=DESKTOP-O04GNHV\SQLEXPRESS01;Initial Catalog=Airline_db;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
-			SqlCommand cmd = new SqlCommand("Insert into users(Name,Address,Contact,City,Username,Password) value(@Name,@Address,@Contact,@City,@Username,@Password)", con);
-			cmd.Parameters.AddWithValue("@Name", u.Name);
-			cmd.Parameters.AddWithValue("@Address", u.Address);
-			cmd.Parameters.AddWithValue("@Contact", u.Contact);
-			cmd.Parameters.AddWithValue("@City", u.City);
-			cmd.Parameters.AddWithValue("@Username", u.Username);
-			cmd.Parameters.AddWithValue("@Password", u.Password);
+			SqlCommand cmd = new SqlCommand("Insert into users(name,address,contact,city,username,password) value(@name,@address,@contact,@city,@username,@password)", con);
+			cmd.Parameters.AddWithValue("@name", u.name);
+			cmd.Parameters.AddWithValue("@address", u.address);
+			cmd.Parameters.AddWithValue("@contact", u.contact);
+			cmd.Parameters.AddWithValue("@city", u.city);
+			cmd.Parameters.AddWithValue("@username", u.username);
+			cmd.Parameters.AddWithValue("@password", u.password);
 			int g = cmd.ExecuteNonQuery();
 			if(g==1)
 			{
@@ -60,15 +60,15 @@ namespace WcfServiceLibrary1
             string connectionString = @"Data Source=DESKTOP-O04GNHV\SQLEXPRESS01;Initial Catalog=Airline_db;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
-				SqlCommand cmd = new SqlCommand("Insert into Flight(Airline,Plane_no,Departure_location,Arrival_location,Departure_date,Arrival_date,Seats,Price) values(@Airline,@Plane_no,@Departure_location,@Arrival_location,@Departure_date,@Arrival_date,@Seats,@Price)", con);
-				cmd.Parameters.AddWithValue("@Airline", flight.Airline);
-				cmd.Parameters.AddWithValue("@Plane_no", flight.Plane_no);
-				cmd.Parameters.AddWithValue("@Departure_location", flight.Departure_location);
-				cmd.Parameters.AddWithValue("@Arrival_location", flight.Arrival_location);
-				cmd.Parameters.AddWithValue("@Departure_date", flight.Departure_date);
-                cmd.Parameters.AddWithValue("@Arrival_date", flight.Arrival_date);
-                cmd.Parameters.AddWithValue("@Seats", flight.Seats);
-				cmd.Parameters.AddWithValue("@Price", flight.Price);
+				SqlCommand cmd = new SqlCommand("Insert into Flight(airline,plane_no,departure_location,arrival_location,departure_date,arrival_date,seats,price) values(@airline,@plane_no,@departure_location,@arrival_location,@departure_date,@arrival_date,@seats,@price)", con);
+				cmd.Parameters.AddWithValue("@airline", flight.airline);
+				cmd.Parameters.AddWithValue("@plane_no", flight.plane_no);
+				cmd.Parameters.AddWithValue("@departure_location", flight.departure_location);
+				cmd.Parameters.AddWithValue("@arrival_location", flight.arrival_location);
+				cmd.Parameters.AddWithValue("@departure_date", flight.departure_date);
+                cmd.Parameters.AddWithValue("@arrival_date", flight.arrival_date);
+                cmd.Parameters.AddWithValue("@seats", flight.seats);
+				cmd.Parameters.AddWithValue("@price", flight.price);
                 int g = cmd.ExecuteNonQuery();
 				if(g==1)
 				{
@@ -99,16 +99,16 @@ namespace WcfServiceLibrary1
             SqlConnection con = new SqlConnection(connectionString);
             
                 con.Open();
-				SqlCommand cmd = new SqlCommand("update flight set Airline=@airline, Plane_no=@plane_no, Departure_location=@departure_location, Arrival_location=@arrival_location, Departure_Date=@departure_date, Arrival_date=@arrival_date, Seats=@seats, Price=@price where Flight_id=@flight_id", con);
-				cmd.Parameters.AddWithValue("@flight_id",f.Flight_id);
-				cmd.Parameters.AddWithValue("@airline",f.Airline);
-				cmd.Parameters.AddWithValue("@plane_no",f.Plane_no);
-				cmd.Parameters.AddWithValue("@departure_location",f.Departure_location);
-				cmd.Parameters.AddWithValue("@arrival_location",f.Arrival_location);
-				cmd.Parameters.AddWithValue("@departure_date",f.Departure_date);
-				cmd.Parameters.AddWithValue("@arrival_date",f.Arrival_date);
-				cmd.Parameters.AddWithValue("@seats",f.Seats);
-				cmd.Parameters.AddWithValue("@price",f.Price);
+				SqlCommand cmd = new SqlCommand("update flight set airline=@airline, plane_no=@plane_no, departure_location=@departure_location, arrival_location=@arrival_location, departure_Date=@departure_date, arrival_date=@arrival_date, seats=@seats, price=@price where Flight_id=@flight_id", con);
+				cmd.Parameters.AddWithValue("@flight_id",f.flight_id);
+				cmd.Parameters.AddWithValue("@airline",f.airline);
+				cmd.Parameters.AddWithValue("@plane_no",f.plane_no);
+				cmd.Parameters.AddWithValue("@departure_location",f.departure_location);
+				cmd.Parameters.AddWithValue("@arrival_location",f.arrival_location);
+				cmd.Parameters.AddWithValue("@departure_date",f.departure_date);
+				cmd.Parameters.AddWithValue("@arrival_date",f.arrival_date);
+				cmd.Parameters.AddWithValue("@seats",f.seats);
+				cmd.Parameters.AddWithValue("@price",f.price);
 				int res = cmd.ExecuteNonQuery();
 				if(res == 1)
 				{
@@ -126,8 +126,8 @@ namespace WcfServiceLibrary1
             SqlConnection con = new SqlConnection(connectionString);
             
             con.Open();
-			SqlCommand cmd = new SqlCommand("delete flight where Flight_id = @flight_id", con);
-			cmd.Parameters.AddWithValue("@flight_id",f.Flight_id);
+			SqlCommand cmd = new SqlCommand("delete flight where flight_id = @flight_id", con);
+			cmd.Parameters.AddWithValue("@flight_id",f.flight_id);
 			int res = cmd.ExecuteNonQuery();
 			if(res == 1)
 			{
